@@ -1,0 +1,39 @@
+{
+  "basics": {
+    "name": "NombreDesconocido",
+    "lastName": "ApellidoDesconocido",
+    "ageYears": 0,
+    "ageMonths": 0,
+    "weight": 0,
+    "image": "profile_image.jpeg",
+    "location": "Desconocido",
+    "feeling": "neutral",
+    "height": 0,
+    "sleep": 0,
+    "lastWorkout": "2024-10-01",
+    "computerTime": 0,
+    "inbox": 0,
+    "todoItems": 0,
+    "websiteVisitors": 0,
+    "databaseSize": 0
+  },
+  "appointments": [{
+    "title": "Cita de revisión",
+    "description": "Descripción genérica",
+    "date": "2024-10-20",
+    "startTime": "10:30",
+    "endTime": "11:30",
+    "status": "PENDING",
+    "notes": "Notas genéricas",
+    "participants": [
+      {
+        "name": "Padre",
+        "role": "padre"
+      },
+      {
+        "name": "Doctor",
+        "role": "doctor"
+      }
+    ]
+  }]
+}

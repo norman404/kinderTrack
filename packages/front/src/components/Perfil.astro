@@ -1,0 +1,15 @@
+---
+const { basics } = Astro.props;
+
+const { name, lastName, image, location, feeling } = basics;
+---
+<div class="flex flex-col items-center p-6">
+  <img src={image} alt="Imagen de perfil" class="w-48 h-48 rounded-full mb-4" />
+  <h2 class="text-xl font-semibold text-gray-800">{name} {lastName}</h2>
+  <p class="text-gray-600">
+    Actualmente en <span class="font-medium">{location}</span>
+  </p>
+  <p class="text-gray-600">
+    Se siente <span class="font-medium">{feeling}</span> 😊
+  </p>
+</div>

@@ -1,0 +1,18 @@
+---
+const { basics } = Astro.props;
+
+const stats = [
+  { label: 'Peso', value: basics.weight },
+  { label: 'Altura', value: basics.height },
+];
+---
+<div class="w-full max-w-md mt-6">
+  <ul class="divide-y divide-gray-200">
+    {stats.map(({ label, value }) => (
+      <li class="flex justify-between py-3">
+        <span class="text-gray-700">{label}</span>
+        <span class="text-gray-900 font-medium">{value}</span>
+      </li>
+    ))}
+  </ul>
+</div>

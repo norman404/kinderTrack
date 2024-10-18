@@ -1,0 +1,23 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { basics, appointments } from '@db';
+
+import Perfil from '../components/Perfil.astro';
+import Estadisticas from '../components/Estadisticas.astro';
+import Appointment from 'src/components/Appointment.astro';
+
+const { name, lastName } = basics;
+
+---
+<Layout title={`${name} ${lastName}`}>
+  <div class="min-h-screen flex flex-col items-center justify-center bg-gray-50">
+    <!-- Sección de Perfil -->
+    <Perfil basics={basics} />
+
+    <!-- Sección de Estadísticas -->
+    <Estadisticas basics={basics} />
+
+   <Appointment appointments={appointments} />
+    
+  </div>
+</Layout>
